@@ -7,7 +7,20 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("Task Manager");
-    manager = new Manager();
+
+    ////////////////Inicio Thread////////////////////
+    // Lista para receber as linhas do arquivo
+    QStringList* stringList = new QStringList();
+
+    // Modelo para receber a lista e ser setado na listView
+    QStringListModel* listModel = new QStringListModel(*stringList, NULL);
+
+    ui->listView->setModel(listModel);
+    manager = new Manager(this);
+    connect(manager,SIGNAL(sendList(QStringList*)),this,SLOT(printList(QStringList*)));
+    //connect(manager,SIGNAL(sendList(int)),this,SLOT(printList(int)));
+    manager->start();
+    //////////////////Fim Thread/////////////////////
 }
 
 MainWindow::~MainWindow()
@@ -17,48 +30,40 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_kill_clicked()
 {
-    kill(ui->lineEdit_PID->text().toInt(), SIGKILL);
+    if (ui->lineEdit_PID->text() != "")
+        kill(ui->lineEdit_PID->text().toInt(), SIGKILL);
     ui->lineEdit_PID->clear();
 }
 
 void MainWindow::on_pushButton_stop_clicked()
 {
-    kill(ui->lineEdit_PID->text().toInt(), SIGSTOP);
+    if (ui->lineEdit_PID->text() != "")
+        kill(ui->lineEdit_PID->text().toInt(), SIGSTOP);
     ui->lineEdit_PID->clear();
 }
 
 void MainWindow::on_pushButton_continue_clicked()
 {
-    kill(ui->lineEdit_PID->text().toInt(), SIGCONT);
+    if (ui->lineEdit_PID->text() != "")
+        kill(ui->lineEdit_PID->text().toInt(), SIGCONT);
     ui->lineEdit_PID->clear();
 }
 
-
-
-//// Lista para receber as linhas do arquivo
-//QStringList* stringList = new QStringList();
-//// Modelo para receber a lista e ser setado na listView
-//QStringListModel* listModel = new QStringListModel(*stringList, NULL);
-//ui->listView->setModel(listModel);
-
-////Arquivo para receber o stream out do comando
-//QString fileName = "out.txt";
-////Comando a ser executado
-//QString command = "ps";
-////Executa o comando com o stream para o filename
-//QProcess::execute (command + ">>" + fileName);
-////Leitura de linha a linha do arquivo
-//QFile inputFile(fileName);
-//if (inputFile.open(QIODevice::ReadOnly))
+//void MainWindow::printList(int a)
 //{
-//QTextStream in(&inputFile);
-//while (!in.atEnd())
-//{
-//QString line = in.readLine();
-//stringList->append(line);
+//    qDebug() << a;
+//    ui->pushButton_continue->setDisabled(true);
 //}
-//inputFile.close();
-//}
-////Reseta o stringList atualizado
-//listModel->setStringList(*stringList);
-//}
+
+void MainWindow::printList(QStringList *stringList)
+{
+    qDebug() << "a";
+    // Modelo para receber a lista e ser setado na listView
+    QStringListModel* listModel = new QStringListModel();
+
+    //Reseta o stringList atualizado
+    listModel->setStringList(*stringList);
+    ui->listView->setModel(listModel);
+}
+
+

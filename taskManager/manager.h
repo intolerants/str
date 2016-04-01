@@ -2,12 +2,27 @@
 #define MANAGER_H
 
 #include <signal.h>
+#include <QThread>
+#include <QProcess>
+#include <QFile>
+#include <QIODevice>
+#include <QTextStream>
+#include <QDebug>
 
-
-class Manager
+class Manager : public QThread
 {
+    Q_OBJECT
+
 public:
-    Manager();
+    explicit Manager(QObject *parent = 0);
+    void run();
+
+private:
+    typedef QThread super;
+
+signals:
+    void sendList(QStringList*);
+    //void sendList(int a);
 };
 
 #endif // MANAGER_H

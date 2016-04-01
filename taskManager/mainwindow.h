@@ -16,9 +16,13 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+private:
+    Ui::MainWindow *ui;
+
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    Manager *manager;
 
 private slots:
     void on_pushButton_kill_clicked();
@@ -27,9 +31,10 @@ private slots:
 
     void on_pushButton_continue_clicked();
 
-private:
-    Ui::MainWindow *ui;
-    Manager* manager;
+public slots:
+     void printList(QStringList *stringList);
+    //void printList(int);
+
 };
 
 #endif // MAINWINDOW_H
