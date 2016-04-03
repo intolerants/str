@@ -20,7 +20,7 @@ void Manager::run(){
             QStringList* stringList = new QStringList();
 
             //Arquivo para receber o stream out do comando
-            QString fileName = "/home/tay/ufrn/intolerants/str/taskManager/out.txt";
+            QString fileName = "out.txt";
 
             //Comando a ser executado
             QString command = "/bin/sh -c \"ps -aux\"";
