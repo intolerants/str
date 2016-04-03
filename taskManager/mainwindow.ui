@@ -92,19 +92,6 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_filter">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>30</y>
-       <width>99</width>
-       <height>27</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Active</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
