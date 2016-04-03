@@ -18,11 +18,13 @@ class MainWindow : public QMainWindow
 
 private:
     Ui::MainWindow *ui;
+    QStringListModel* listModel;
 
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     Manager *manager;
+    QString filter;
 
 private slots:
     void on_pushButton_kill_clicked();
@@ -30,6 +32,8 @@ private slots:
     void on_pushButton_stop_clicked();
 
     void on_pushButton_continue_clicked();
+
+    void on_pushButton_filter_clicked();
 
 public slots:
      void printList(QStringList *stringList);

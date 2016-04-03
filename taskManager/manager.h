@@ -8,6 +8,7 @@
 #include <QIODevice>
 #include <QTextStream>
 #include <QDebug>
+#include <QDateTime>
 
 class Manager : public QThread
 {

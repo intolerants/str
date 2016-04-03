@@ -8,23 +8,24 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowTitle("Task Manager");
 
-    ////////////////Inicio Thread////////////////////
     // Lista para receber as linhas do arquivo
     QStringList* stringList = new QStringList();
 
     // Modelo para receber a lista e ser setado na listView
-    QStringListModel* listModel = new QStringListModel(*stringList, NULL);
+    listModel = new QStringListModel(*stringList, NULL);
 
     ui->listView->setModel(listModel);
     manager = new Manager(this);
     connect(manager,SIGNAL(sendList(QStringList*)),this,SLOT(printList(QStringList*)));
     //connect(manager,SIGNAL(sendList(int)),this,SLOT(printList(int)));
     manager->start();
-    //////////////////Fim Thread/////////////////////
+
 }
 
 MainWindow::~MainWindow()
 {
+    manager->terminate();
+    while(!manager->isFinished());
     delete ui;
 }
 
@@ -49,21 +50,39 @@ void MainWindow::on_pushButton_continue_clicked()
     ui->lineEdit_PID->clear();
 }
 
-//void MainWindow::printList(int a)
-//{
-//    qDebug() << a;
-//    ui->pushButton_continue->setDisabled(true);
-//}
 
 void MainWindow::printList(QStringList *stringList)
 {
-    qDebug() << "a";
-    // Modelo para receber a lista e ser setado na listView
-    QStringListModel* listModel = new QStringListModel();
+    //listModel->sort(4, Qt::DescendingOrder);
+
+    if ((ui->pushButton_filter->text().contains("Desativar"))){
+        QMutableStringListIterator i(*stringList);
+        while (i.hasNext()){
+            //qDebug() << i.next();
+            if (!i.next().contains(filter)){
+                //qDebug() << filter;
+                i.remove();
+            }
+        }
+    }
 
     //Reseta o stringList atualizado
     listModel->setStringList(*stringList);
+
     ui->listView->setModel(listModel);
+
 }
 
 
+void MainWindow::on_pushButton_filter_clicked()
+{
+    if ((ui->pushButton_filter->text().contains("Desativar"))){
+        ui->pushButton_filter->setText("Ativar");
+        filter.clear();
+    }
+    else {
+        ui->pushButton_filter->setText("Desativar");
+        filter.clear();
+        filter.append(ui->lineEdit_filter->text());
+    }
+}

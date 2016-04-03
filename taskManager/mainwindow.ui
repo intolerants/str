@@ -102,7 +102,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Filtrar</string>
+      <string>Ativar</string>
      </property>
     </widget>
    </widget>
@@ -200,7 +200,7 @@
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
