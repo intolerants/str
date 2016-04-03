@@ -8,8 +8,11 @@ Manager::Manager(QObject *parent):
 
 void Manager::run(){
     double time = QDateTime::currentDateTime().toMSecsSinceEpoch()/1000.0;
+    int i, j;
 
     while(1){
+        i = 0; j = 0;
+
         if (QDateTime::currentDateTime().toMSecsSinceEpoch()/1000.0 - time >= 2){
             time = QDateTime::currentDateTime().toMSecsSinceEpoch()/1000.0;
 

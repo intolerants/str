@@ -55,7 +55,7 @@ void MainWindow::printList(QStringList *stringList)
 {
     //listModel->sort(4, Qt::DescendingOrder);
 
-    if ((ui->pushButton_filter->text().contains("Desativar"))){
+    if ((ui->pushButton_filter->text().contains("Deactivate"))){
         QMutableStringListIterator i(*stringList);
         while (i.hasNext()){
             QString next = i.next();
@@ -76,12 +76,12 @@ void MainWindow::printList(QStringList *stringList)
 
 void MainWindow::on_pushButton_filter_clicked()
 {
-    if ((ui->pushButton_filter->text().contains("Desativar"))){
-        ui->pushButton_filter->setText("Ativar");
+    if ((ui->pushButton_filter->text().contains("Deactivate"))){
+        ui->pushButton_filter->setText("Activate");
         filter.clear();
     }
     else {
-        ui->pushButton_filter->setText("Desativar");
+        ui->pushButton_filter->setText("Deactivate");
         filter.clear();
         filter.append(ui->lineEdit_filter->text());
     }
@@ -89,7 +89,7 @@ void MainWindow::on_pushButton_filter_clicked()
 
 void MainWindow::on_lineEdit_filter_textChanged(const QString &arg1)
 {
-    if (ui->pushButton_filter->text().contains("Desativar")){
+    if (ui->pushButton_filter->text().contains("Deactivate")){
         filter.clear();
         filter.append(arg1);
     }
