@@ -58,10 +58,10 @@ void MainWindow::printList(QStringList *stringList)
     if ((ui->pushButton_filter->text().contains("Desativar"))){
         QMutableStringListIterator i(*stringList);
         while (i.hasNext()){
-            //qDebug() << i.next();
-            if (!i.next().contains(filter)){
-                //qDebug() << filter;
-                i.remove();
+            QString next = i.next();
+            if (!next.contains(filter)){
+                if(!next.contains("PID"))
+                    i.remove();
             }
         }
     }
@@ -84,5 +84,13 @@ void MainWindow::on_pushButton_filter_clicked()
         ui->pushButton_filter->setText("Desativar");
         filter.clear();
         filter.append(ui->lineEdit_filter->text());
+    }
+}
+
+void MainWindow::on_lineEdit_filter_textChanged(const QString &arg1)
+{
+    if (ui->pushButton_filter->text().contains("Desativar")){
+        filter.clear();
+        filter.append(arg1);
     }
 }

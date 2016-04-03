@@ -35,6 +35,8 @@ private slots:
 
     void on_pushButton_filter_clicked();
 
+    void on_lineEdit_filter_textChanged(const QString &arg1);
+
 public slots:
      void printList(QStringList *stringList);
     //void printList(int);
