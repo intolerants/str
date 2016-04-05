@@ -1,0 +1,215 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.1  0.0 185064  5712 ?        Ss   09:27   0:01 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    09:27   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    09:27   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S    09:27   0:00 [kworker/u16:0]
+root         7  0.0  0.0      0     0 ?        R    09:27   0:00 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    09:27   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuos/0]
+root        10  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuob/0]
+root        11  0.0  0.0      0     0 ?        S    09:27   0:00 [migration/0]
+root        12  0.0  0.0      0     0 ?        S    09:27   0:00 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S    09:27   0:00 [watchdog/1]
+root        14  0.0  0.0      0     0 ?        S    09:27   0:00 [migration/1]
+root        15  0.0  0.0      0     0 ?        S    09:27   0:00 [ksoftirqd/1]
+root        17  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/1:0H]
+root        18  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuos/1]
+root        19  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuob/1]
+root        20  0.0  0.0      0     0 ?        S    09:27   0:00 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    09:27   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    09:27   0:00 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuos/2]
+root        26  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuob/2]
+root        27  0.0  0.0      0     0 ?        S    09:27   0:00 [watchdog/3]
+root        28  0.0  0.0      0     0 ?        S    09:27   0:00 [migration/3]
+root        29  0.0  0.0      0     0 ?        S    09:27   0:00 [ksoftirqd/3]
+root        30  0.0  0.0      0     0 ?        S    09:27   0:00 [kworker/3:0]
+root        31  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/3:0H]
+root        32  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuos/3]
+root        33  0.0  0.0      0     0 ?        S    09:27   0:00 [rcuob/3]
+root        34  0.0  0.0      0     0 ?        S<   09:27   0:00 [khelper]
+root        35  0.0  0.0      0     0 ?        S    09:27   0:00 [kdevtmpfs]
+root        36  0.0  0.0      0     0 ?        S<   09:27   0:00 [netns]
+root        37  0.0  0.0      0     0 ?        S<   09:27   0:00 [perf]
+root        38  0.0  0.0      0     0 ?        S    09:27   0:00 [khungtaskd]
+root        39  0.0  0.0      0     0 ?        S<   09:27   0:00 [writeback]
+root        40  0.0  0.0      0     0 ?        SN   09:27   0:00 [ksmd]
+root        41  0.0  0.0      0     0 ?        SN   09:27   0:00 [khugepaged]
+root        42  0.0  0.0      0     0 ?        S<   09:27   0:00 [crypto]
+root        43  0.0  0.0      0     0 ?        S<   09:27   0:00 [kintegrityd]
+root        44  0.0  0.0      0     0 ?        S<   09:27   0:00 [bioset]
+root        45  0.0  0.0      0     0 ?        S<   09:27   0:00 [kblockd]
+root        46  0.0  0.0      0     0 ?        S<   09:27   0:00 [ata_sff]
+root        47  0.0  0.0      0     0 ?        S<   09:27   0:00 [md]
+root        48  0.0  0.0      0     0 ?        S<   09:27   0:00 [devfreq_wq]
+root        50  0.1  0.0      0     0 ?        S    09:27   0:01 [kworker/1:1]
+root        52  0.0  0.0      0     0 ?        S    09:27   0:00 [kswapd0]
+root        53  0.0  0.0      0     0 ?        S<   09:27   0:00 [vmstat]
+root        54  0.0  0.0      0     0 ?        S    09:27   0:00 [fsnotify_mark]
+root        55  0.0  0.0      0     0 ?        S    09:27   0:00 [ecryptfs-kthrea]
+root        66  0.0  0.0      0     0 ?        S<   09:27   0:00 [kthrotld]
+root        69  0.0  0.0      0     0 ?        S<   09:27   0:00 [acpi_thermal_pm]
+root        70  0.1  0.0      0     0 ?        S    09:27   0:00 [kworker/0:2]
+root        75  0.0  0.0      0     0 ?        S<   09:27   0:00 [ipv6_addrconf]
+root        76  0.0  0.0      0     0 ?        S    09:27   0:00 [kworker/2:2]
+root        95  0.0  0.0      0     0 ?        S<   09:27   0:00 [deferwq]
+root        96  0.0  0.0      0     0 ?        S<   09:27   0:00 [charger_manager]
+root       148  0.0  0.0      0     0 ?        S<   09:27   0:00 [kpsmoused]
+root       149  0.0  0.0      0     0 ?        S    09:27   0:00 [scsi_eh_0]
+root       151  0.0  0.0      0     0 ?        S<   09:27   0:00 [scsi_tmf_0]
+root       152  0.0  0.0      0     0 ?        S    09:27   0:00 [scsi_eh_1]
+root       153  0.0  0.0      0     0 ?        S<   09:27   0:00 [scsi_tmf_1]
+root       154  0.0  0.0      0     0 ?        S    09:27   0:00 [scsi_eh_2]
+root       155  0.0  0.0      0     0 ?        S<   09:27   0:00 [scsi_tmf_2]
+root       156  0.0  0.0      0     0 ?        S    09:27   0:00 [scsi_eh_3]
+root       157  0.0  0.0      0     0 ?        S<   09:27   0:00 [scsi_tmf_3]
+root       158  0.0  0.0      0     0 ?        S    09:27   0:00 [kworker/u16:2]
+root       162  0.0  0.0      0     0 ?        S<   09:27   0:00 [rtsx_pci_sdmmc_]
+root       164  0.0  0.0      0     0 ?        S<   09:27   0:00 [ttm_swap]
+root       189  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/1:1H]
+root       191  0.0  0.0      0     0 ?        S    09:27   0:00 [kworker/1:2]
+root       192  0.0  0.0      0     0 ?        S    09:27   0:00 [jbd2/sda6-8]
+root       193  0.0  0.0      0     0 ?        S<   09:27   0:00 [ext4-rsv-conver]
+root       229  0.0  0.0      0     0 ?        S    09:27   0:00 [kauditd]
+root       249  0.0  0.1  43880 10572 ?        Ss   09:27   0:00 /lib/systemd/systemd-journald
+root       263  0.1  0.0  46080  5476 ?        Ss   09:27   0:00 /lib/systemd/systemd-udevd
+root       290  0.0  0.0      0     0 ?        S    09:27   0:00 [irq/46-mei_me]
+root       295  0.0  0.0      0     0 ?        S<   09:27   0:00 [cfg80211]
+root       299  0.0  0.0      0     0 ?        S<   09:27   0:00 [kmemstick]
+root       309  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/0:1H]
+root       315  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/3:1H]
+root       316  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/2:1H]
+root       328  0.1  0.0      0     0 ?        S    09:27   0:01 [irq/47-iwlwifi]
+root       344  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/u17:0]
+root       345  0.0  0.0      0     0 ?        S<   09:27   0:00 [hci0]
+root       346  0.0  0.0      0     0 ?        S<   09:27   0:00 [hci0]
+root       347  0.0  0.0      0     0 ?        S<   09:27   0:00 [kworker/u17:1]
+root       448  0.0  0.0      0     0 ?        S<   09:27   0:00 [kvm-irqfd-clean]
+systemd+   498  0.0  0.0 102356  2784 ?        Ssl  09:27   0:00 /lib/systemd/systemd-timesyncd
+root       685  0.0  0.0  28640  3164 ?        Ss   09:28   0:00 /lib/systemd/systemd-logind
+root       686  0.0  0.0  29708  4420 ?        Ss   09:28   0:00 /usr/lib/bluetooth/bluetoothd
+root       687  0.0  0.0  25180  2596 ?        Ss   09:28   0:00 /sbin/cgmanager -m name=systemd
+root       690  0.0  0.0  33132  3144 ?        Ss   09:28   0:00 /usr/sbin/cron -f
+syslog     692  0.0  0.0 256372  3416 ?        Ssl  09:28   0:00 /usr/sbin/rsyslogd -n
+avahi      700  0.0  0.0  40324  3356 ?        Ss   09:28   0:00 avahi-daemon: running [Gengar.local]
+root       702  0.0  0.1 170516  8572 ?        Ssl  09:28   0:00 /usr/sbin/thermald --no-daemon --dbus-enable
+root       705  0.0  0.1 337272 10516 ?        Ssl  09:28   0:00 /usr/sbin/ModemManager
+root       714  0.0  0.0  90500  7440 ?        Ss   09:28   0:00 /usr/sbin/cupsd -l
+root       720  0.0  0.1 455952 15552 ?        Ssl  09:28   0:00 /usr/sbin/NetworkManager --no-daemon
+message+   725  0.0  0.0  44248  5120 ?        Ss   09:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       736  0.0  0.0  19444  2216 ?        Ss   09:28   0:00 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+whoopsie   742  0.0  0.2 448852 17632 ?        Ssl  09:28   0:00 /usr/bin/whoopsie -f
+root       743  0.0  0.1 287320  8908 ?        Ssl  09:28   0:00 /usr/lib/accountsservice/accounts-daemon
+root       745  0.0  0.0  19868  2540 ?        Ss   09:28   0:00 /usr/sbin/anacron -dsq
+avahi      772  0.0  0.0  40068   316 ?        S    09:28   0:00 avahi-daemon: chroot helper
+root       773  0.0  0.1 272496 11748 ?        Ssl  09:28   0:00 /usr/sbin/cups-browsed
+root       781  0.0  0.0 278376  7644 ?        Ssl  09:28   0:00 /usr/lib/policykit-1/polkitd --no-debug
+colord     789  0.0  0.1 306340 13992 ?        Ssl  09:28   0:00 /usr/lib/colord/colord
+lp         795  0.0  0.0  74192  5356 ?        S    09:28   0:00 /usr/lib/cups/notifier/dbus dbus:// 
+root       800  0.0  0.0  39324  6856 ?        Ss   09:28   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root       868  0.0  0.1  23456 10144 ?        S    09:28   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/sendsigs.omit.d/network-manager.dhclient-wlan0.pid -lf /var/lib/NetworkManager/dhclient-9c7d4091-279c-4b46-ac70-5457880d8a0a-wlan0.lease -cf /var/lib/NetworkManager/dhclient-wlan0.conf wlan0
+nobody     880  0.0  0.0  52296  4080 ?        S    09:28   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+lp        1104  0.0  0.0  74192  5304 ?        S    09:28   0:00 /usr/lib/cups/notifier/dbus dbus:// 
+root      1116  0.0  0.0 352416  6052 ?        SLsl 09:28   0:00 /usr/sbin/lightdm
+root      1125  1.5  0.5 355784 48448 tty7     Ssl+ 09:28   0:11 /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      1134  0.0  0.0   4396  1772 ?        Ss   09:28   0:00 /usr/sbin/acpid
+root      1167  0.0  0.0  20060  2196 tty1     Ss+  09:28   0:00 /sbin/agetty --noclear tty1 linux
+kernoops  1168  0.0  0.0  45280  2592 ?        Ss   09:28   0:00 /usr/sbin/kerneloops
+root      1207  0.0  0.0 230224  6136 ?        Sl   09:28   0:00 lightdm --session-child 12 19
+rtkit     1278  0.0  0.0 178820  2848 ?        SNsl 09:28   0:00 /usr/lib/rtkit/rtkit-daemon
+root      1294  0.0  0.1 280400 12540 ?        Ssl  09:28   0:00 /usr/lib/upower/upowerd
+root      1302  0.0  0.0      0     0 ?        S<   09:28   0:00 [krfcommd]
+tay       1365  0.0  0.0  45296  5132 ?        Ss   09:28   0:00 /lib/systemd/systemd --user
+tay       1366  0.0  0.0  61052  1840 ?        S    09:28   0:00 (sd-pam)         
+tay       1371  0.0  0.1 367532  8868 ?        SLl  09:28   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+tay       1373  0.0  0.0  45892  4552 ?        Ss   09:28   0:00 /sbin/upstart --user
+tay       1454  0.0  0.0  32304   260 ?        S    09:28   0:00 upstart-udev-bridge --daemon --user
+tay       1458  0.0  0.0  43748  4272 ?        Ss   09:28   0:00 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-5igLvkkw2m
+tay       1470  0.0  0.1  88188  9704 ?        Ss   09:28   0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+tay       1497  0.0  0.0  32240   280 ?        S    09:28   0:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+tay       1503  0.0  0.0  32240   296 ?        S    09:28   0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+tay       1513  0.0  0.0  40716  2132 ?        S    09:28   0:00 upstart-file-bridge --daemon --user
+tay       1534  0.0  0.4 707016 37764 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/hud/hud-service
+tay       1536  0.0  0.4 864676 32992 ?        Ssl  09:28   0:00 /usr/lib/unity-settings-daemon/unity-settings-daemon
+tay       1541  0.0  0.0 337960  5896 ?        Ssl  09:28   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+tay       1542  0.0  0.1 546144 15772 ?        Ssl  09:28   0:00 gnome-session --session=ubuntu
+tay       1548  0.0  0.3 561360 31916 ?        Ssl  09:28   0:00 /usr/lib/unity/unity-panel-service
+tay       1549  0.0  0.0  42860  4060 ?        S    09:28   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+tay       1551  0.0  0.0 206828  5392 ?        Sl   09:28   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+tay       1554  1.8  1.2 1209992 98048 ?       Ssl  09:28   0:13 compiz
+tay       1558  0.0  0.0 271272  5816 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfsd
+tay       1563  0.0  0.0 409032  7560 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+tay       1609  0.0  0.3 514204 26176 ?        Sl   09:28   0:00 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+tay       1647  0.0  0.0  22364  2476 ?        S    09:28   0:00 syndaemon -i 1.0 -t -K -R
+tay       1651  0.0  0.1 508260 11236 ?        S<l  09:28   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+tay       1658  0.0  0.0 178760  5088 ?        Sl   09:28   0:00 /usr/lib/dconf/dconf-service
+tay       1672  0.0  0.0 363584  7512 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+tay       1673  0.0  0.0 337628  7676 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+tay       1676  0.0  0.1 492512  8236 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+tay       1677  0.0  0.2 1234868 18024 ?       Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+tay       1680  0.0  0.3 715356 27692 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
+tay       1681  0.0  0.1 549316 12860 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+tay       1682  0.0  0.3 541452 24916 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+tay       1683  0.0  0.0 959184  6980 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+tay       1730  0.1  0.6 1583276 51728 ?       Sl   09:28   0:01 nautilus -n
+tay       1732  0.0  0.1 395588 12008 ?        Ssl  09:28   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+tay       1739  0.0  0.2 573280 20604 ?        Sl   09:28   0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+tay       1741  0.0  0.2 625164 22644 ?        Sl   09:28   0:00 /usr/lib/evolution/evolution-source-registry
+tay       1742  0.0  0.2 425844 20524 ?        Sl   09:28   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+tay       1746  0.0  0.4 661700 35760 ?        Sl   09:28   0:00 nm-applet
+tay       1759  0.0  0.0  66296  6348 ?        S    09:28   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+tay       1770  0.0  0.1 289512  9632 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      1780  0.0  0.1 367532  8760 ?        Ssl  09:28   0:00 /usr/lib/udisks2/udisksd --no-debug
+tay       1788  0.0  0.1 403172 11032 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+tay       1794  0.0  0.0 275956  7708 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+tay       1799  0.0  0.0 263760  5152 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+tay       1813  0.0  0.7 859012 62808 ?        Sl   09:28   0:00 /usr/lib/evolution/evolution-calendar-factory
+tay       1851  0.0  0.0 344904  4752 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+tay       1858  0.0  0.1 349520  8300 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/1
+tay       1874  0.0  0.2 548888 22516 ?        Sl   09:28   0:00 telepathy-indicator
+tay       1884  0.0  0.1 424908 14984 ?        Sl   09:28   0:00 /usr/lib/telepathy/mission-control-5
+tay       1898  0.0  0.1 849212 15168 ?        Sl   09:28   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1813x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1813/2
+tay       1908  0.0  0.2 692340 18300 ?        Sl   09:28   0:00 /usr/lib/evolution/evolution-addressbook-factory
+tay       1911  0.0  0.2 1030196 18996 ?       Sl   09:28   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1813x3 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1813/3
+tay       1932  0.0  0.2 767892 17584 ?        Sl   09:28   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1908x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1908/2
+tay       1960  0.0  0.2 576664 17484 ?        Sl   09:28   0:00 zeitgeist-datahub
+tay       1966  0.0  0.1 412344  9260 ?        Sl   09:28   0:00 /usr/bin/zeitgeist-daemon
+tay       1974  0.0  0.1 319256 15388 ?        Sl   09:28   0:00 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+tay       2008  0.0  0.0 190368  5728 ?        Sl   09:28   0:00 /usr/lib/gvfs/gvfsd-metadata
+tay       2022  0.0  0.2 434504 20432 ?        Sl   09:28   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
+uuidd     2043  0.0  0.0  27600  1428 ?        Ss   09:28   0:00 /usr/sbin/uuidd --socket-activation
+tay       2080  0.0  0.2 519344 22544 ?        Sl   09:29   0:00 update-notifier
+tay       2180  0.0  0.0 441848  7340 ?        Sl   09:30   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+tay       2208  2.4  3.1 2951868 257928 ?      Sl   09:30   0:14 /opt/qt/Tools/QtCreator/bin/qtcreator
+root      2429  0.0  0.0      0     0 ?        S    09:32   0:00 [kworker/1:0]
+root      2431  0.0  0.0      0     0 ?        S    09:32   0:00 [kworker/2:0]
+root      2569  0.0  0.0   4476   768 ?        S    09:33   0:00 /bin/sh -c run-parts --report /etc/cron.daily
+root      2570  0.0  0.0   4364   720 ?        S    09:33   0:00 run-parts --report /etc/cron.daily
+root      2579  0.0  0.0   4476  1584 ?        S    09:33   0:00 /bin/sh /etc/cron.daily/apt
+root      2639  0.0  0.0  11432   724 ?        S    09:33   0:00 sleep 1425
+tay       3589  4.8  2.6 1656436 210564 ?      SLl  09:33   0:20 /opt/google/chrome/chrome    
+tay       3598  0.0  0.0  11584   820 ?        S    09:33   0:00 cat
+tay       3599  0.0  0.0  11584   840 ?        S    09:33   0:00 cat
+tay       3602  0.0  0.6 361872 48540 ?        S    09:33   0:00 /opt/google/chrome/chrome --type=zygote
+tay       3603  0.0  0.1 140336  8528 ?        S    09:33   0:00 /opt/google/chrome/nacl_helper
+tay       3606  0.0  0.1 361872 11132 ?        S    09:33   0:00 /opt/google/chrome/chrome --type=zygote
+tay       3644  1.3  1.0 457604 84176 ?        Sl   09:33   0:05 /opt/google/chrome/chrome --type=gpu-process --channel=3589.0.324952596 --window-depth=24 --supports-dual-gpus=false --gpu-driver-bug-workarounds=3,26,34,37,54,64,66 --disable-accelerated-video-decode --gpu-vendor-id=0x10de --gpu-device-id=0x1292 --gpu-driver-vendor --gpu-driver-version --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       3646  0.0  0.1 383868 12440 ?        S    09:33   0:00 /opt/google/chrome/chrome --type=gpu-broker                                                                                                                                                                                                                                                                                              
+tay       3655  1.1  1.7 1199328 137632 ?      Sl   09:33   0:04 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.1.992012063 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       3656  1.9  1.6 871492 136296 ?       Sl   09:33   0:07 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.2.2031014926 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       3657  1.3  1.0 784276 81136 ?        Sl   09:33   0:05 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.3.1414008813 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       3658  0.0  0.8 806820 68452 ?        Sl   09:33   0:00 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.4.470833973 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+root      3740  0.0  0.0      0     0 ?        S    09:33   0:00 [kworker/0:1]
+root      3747  0.0  0.0      0     0 ?        S    09:33   0:00 [kworker/3:1]
+tay       3754  0.1  1.0 797144 86412 ?        Sl   09:33   0:00 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.7.326883103 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       3762  0.3  1.2 830600 104220 ?       Sl   09:33   0:01 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --instant-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.8.1660040084 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       3837  0.4  1.5 859068 128676 ?       Sl   09:34   0:01 /opt/google/chrome/chrome --type=renderer --enable-features=LinuxObsoleteSystemIsEndOfTheLine<LinuxObsoleteSystemIsEndOfTheLine --disable-features=WebFontsIntervention<WebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Control_Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*GFE/Default/InstanceID/Enabled/LinuxObsoleteSystemIsEndOfTheLine/EndOfLine/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/Unused_2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Disabled/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/SafeBrowsingUpdateFrequency/Default/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_98/*UMA-Uniformity-Trial-10-Percent/group_06/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/default/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Disabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --instant-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --channel=3589.10.1884351368 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+tay       4037  108  0.7 846624 59400 ?        Sl   09:39   1:10 /home/tay/ufrn/str/build-taskManager-Desktop_Qt_5_5_1_GCC_64bit-Debug/taskManager
+tay       4113  1.1  0.6 693308 56356 ?        Sl   09:40   0:00 /usr/bin/python /usr/bin/x-terminal-emulator
+tay       4124  0.0  0.0  14852  1852 ?        S    09:40   0:00 gnome-pty-helper
+tay       4125  0.2  0.0  27368  6036 pts/5    Ss+  09:40   0:00 /bin/bash
+root      4255  0.0  0.0      0     0 ?        S    09:40   0:00 [kworker/u16:1]
+tay       4257  0.0  0.0   4476   860 ?        S    09:40   0:00 /bin/sh -c ps -aux>>/home/tay/ufrn/intolerants/str/taskManager/out.txt
+tay       4258  0.0  0.0  22684  2692 ?        R    09:40   0:00 ps -aux
