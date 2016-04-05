@@ -26,7 +26,7 @@ void Manager::run(){
             QString command = "/bin/sh -c \"ps -aux\"";
 
             //Executa o comando com o stream para o filename
-            system("> /home/tay/ufrn/intolerants/str/taskManager/out.txt");
+            system("> out.txt");
             QProcess::execute(command + ">>" + fileName);
 
             //Leitura de linha a linha do arquivo
