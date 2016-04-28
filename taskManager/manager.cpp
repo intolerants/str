@@ -23,7 +23,7 @@ void Manager::run(){
             QString fileName = "out.txt";
 
             //Comando a ser executado
-            QString command = "/bin/sh -c \"ps -aux\"";
+            QString command = "/bin/sh -c \"ps -auxf\"";
 
             //Executa o comando com o stream para o filename
             system("> out.txt");
