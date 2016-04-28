@@ -43,12 +43,21 @@ int main( )
     details feedback;
     int porta = 9733;
 
+    //Tempo inicial e final
+    time_t tempo_inicial, tempo_final, data_hora_segundos;
+    tempo_inicial=0;
+    tempo_final=0;
+    data_hora_segundos=0;
+    //Seta o tempo inicial para 01/01/1970 00:00:00
+    time(&data_hora_segundos); // preenche a variável data_hora_segundos
+    tm *tempo_inicial_info=localtime(&data_hora_segundos);
 
-    char cmd = 'a';
+    int time_diff;
 
-    feedback.time = 100;
-    strcpy(feedback.description, "Taynara ta velha");
+    tempo_inicial=mktime(tempo_inicial_info);
 
+    //Seta o tempo final
+    int x[3];
 
     unlink("server_socket");  // remocao de socket antigo
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);  // cria um novo socket
@@ -71,12 +80,33 @@ int main( )
         
         read(client_sockfd, &birthday,sizeof(birthday));
         cout <<"\t\tRecebido " << birthday.day << "/" << birthday.month << "/" << birthday.year << endl;
+        x[0] = birthday.year;
+        x[1] = birthday.month;
+        x[2] = birthday.day;
+        tm* tempo_final_info=localtime(&tempo_final);
+
+        tempo_final_info->tm_year=x[0]-1900; //ano (� necess�rio subtrair 1900, pois os anos iniciam em 1900)
+        tempo_final_info->tm_mon=x[1]-1;  //m�s (� necess�rio subtrair 1, pois os meses iniciam no zero)
+        tempo_final_info->tm_mday=x[2]; //dia
+        tempo_final_info->tm_hour=0; //hora=00
+        tempo_final_info->tm_min=0; //minuto=00
+        tempo_final_info->tm_sec=0; //segundo=00
+
+        tempo_final=mktime(tempo_final_info);
+
+        time_diff = tempo_inicial - tempo_final;
+
+        cout << "\t\tDiferenca em segundos: " << time_diff << endl;
         
+        feedback.time = time_diff;
+        if (time_diff < 748918912)
+        {
+            strcpy(feedback.description, "Novinh@ emmmmmm!");
+        } else {
+            strcpy(feedback.description, "Ta velh@ emmmmmm!");
+        }
         write(client_sockfd, &feedback, sizeof(feedback));
 
         close(client_sockfd);
-        // cin >> cmd;
-        // if(cmd == 'e')
-        //     break;
     }
 }

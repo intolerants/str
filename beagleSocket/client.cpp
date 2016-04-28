@@ -50,9 +50,9 @@ int main( )
     porta = 9733;  // numero da porta
     
     date birthday;
-    birthday.day = 1;
-    birthday.month = 1;
-    birthday.year = 1;
+    birthday.day = 15;
+    birthday.month = 7;
+    birthday.year = 1992;
 
     details feedback;
 
