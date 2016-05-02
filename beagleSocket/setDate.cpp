@@ -9,10 +9,10 @@ void manual(void){
   char date[30] /*= "1 May 2016 19:30:00"*/, cmd[40], c;
   while((c = getchar()) != '\n' && c != EOF); // clear buffer
   printf("Entre com a hora atual no formato (1 May 2016 19:30:00): \n");
-  scanf ("%[^\n]%*c", date); // get string with spaces
+  if(scanf ("%[^\n]%*c", date)); // get string with spaces
   sprintf(cmd, "date --set \"%s\"", date);
   // printf("%s\n",cmd);
-  system(cmd);
+  if(system(cmd));
 }
 
 void automatic(void){
@@ -29,14 +29,14 @@ int currentYear(void) {
 }
 
 void checkDate(void){
-  system("clear");
+  if(system("clear"));
   if (currentYear() < YEAR_DEPRECATED)
   {
     char op = '\0';
     printf("Atualizar hora do sistema.\nEscolha uma opcao:\n(a)utomatico\n(m)anual\n(n)ao atualizar\n");
     while(op == '\0'){
-      scanf("%c", &op);
-      system("clear");
+      if(scanf("%c", &op));
+      if(system("clear"));
       switch(op){
         case 'a':
           automatic();
@@ -52,7 +52,7 @@ void checkDate(void){
     }
   } else {
     printf("System date:\n");
-    system("date");
+    if(system("date"));
     printf("\n");
   }
 }
