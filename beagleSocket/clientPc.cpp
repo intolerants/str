@@ -45,9 +45,10 @@ int main( )
 
     system("clear");
 
-    char hostname[256] = "xuxu.local";
+    // char hostname[256] = "xuxu.local";
     // char hostname[256];
-    porta = 9737;  // numero da porta
+    char hostname[256] = "localhost";
+    porta = 9736;  // numero da porta
     
     date birthday;
     birthday.day = 15;
@@ -56,15 +57,15 @@ int main( )
 
     details feedback;
 
-    cout << "\tHostname: ";
-    cin >> hostname;
-    cout << "\tPort: ";
-    cin >> porta;
+    // cout << "\tHostname: ";
+    // cin >> hostname;
+    // cout << "\tPort: ";
+    // cin >> porta;
     
     cout <<"\t\tConectando ao " << hostname << ":" << porta << endl;
 
-    cout << "\tDia Mes Ano: ";
-    cin >> birthday.day >> birthday.month >> birthday.year;
+    // cout << "\tDia Mes Ano: ";
+    // cin >> birthday.day >> birthday.month >> birthday.year;
 
     cout <<"\t\tEnviando " << birthday.day << "/" << birthday.month << "/" << birthday.year << endl;
 
@@ -109,4 +110,3 @@ int main( )
     close(sockfd);
     exit(0);
 }
-

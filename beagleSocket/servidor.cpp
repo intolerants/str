@@ -18,17 +18,18 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-struct date {
+typedef struct{
     int day;
     int month;
     int year;
-};
+}date;
 
-struct details
-{
+typedef struct{
     int time;
     char description[34];
-};
+}details;
+
+int calcTime(date birthday);
 
 
 int main( )
@@ -41,23 +42,7 @@ int main( )
     
     date birthday;
     details feedback;
-    int porta = 9733;
-
-    //Tempo inicial e final
-    time_t tempo_inicial, tempo_final, data_hora_segundos;
-    tempo_inicial=0;
-    tempo_final=0;
-    data_hora_segundos=0;
-    //Seta o tempo inicial para 01/01/1970 00:00:00
-    time(&data_hora_segundos); // preenche a variável data_hora_segundos
-    tm *tempo_inicial_info=localtime(&data_hora_segundos);
-
-    int time_diff;
-
-    tempo_inicial=mktime(tempo_inicial_info);
-
-    //Seta o tempo final
-    int x[3];
+    int porta = 9736;
 
     unlink("server_socket");  // remocao de socket antigo
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);  // cria um novo socket
@@ -73,33 +58,16 @@ int main( )
     bind(server_sockfd, (struct sockaddr *) &server_address, server_len);
     
     listen(server_sockfd, 5);
-    system("clear");
+    // system("clear");
     while(1) {
         printf("Servidor esperando na porta %d ...\n", porta);
         client_sockfd = accept(server_sockfd, (struct sockaddr *) &client_address, (socklen_t *) &client_len);
         
         read(client_sockfd, &birthday,sizeof(birthday));
         cout <<"\t\tRecebido " << birthday.day << "/" << birthday.month << "/" << birthday.year << endl;
-        x[0] = birthday.year;
-        x[1] = birthday.month;
-        x[2] = birthday.day;
-        tm* tempo_final_info=localtime(&tempo_final);
 
-        tempo_final_info->tm_year=x[0]-1900; //ano (� necess�rio subtrair 1900, pois os anos iniciam em 1900)
-        tempo_final_info->tm_mon=x[1]-1;  //m�s (� necess�rio subtrair 1, pois os meses iniciam no zero)
-        tempo_final_info->tm_mday=x[2]; //dia
-        tempo_final_info->tm_hour=0; //hora=00
-        tempo_final_info->tm_min=0; //minuto=00
-        tempo_final_info->tm_sec=0; //segundo=00
-
-        tempo_final=mktime(tempo_final_info);
-
-        time_diff = tempo_inicial - tempo_final;
-
-        cout << "\t\tDiferenca em segundos: " << time_diff << endl;
-        
-        feedback.time = time_diff;
-        if (time_diff < 748918912)
+        feedback.time = calcTime(birthday);      
+        if (feedback.time < 748918912)
         {
             strcpy(feedback.description, "Novinh@ emmmmmm!");
         } else {
@@ -109,4 +77,36 @@ int main( )
 
         close(client_sockfd);
     }
+}
+
+int calcTime(date birthday){
+    time_t tempo_inicial, tempo_final, data_hora_segundos;
+    tempo_inicial=0;
+    tempo_final=0;
+    data_hora_segundos=0;
+    //Seta o tempo inicial para 01/01/1970 00:00:00
+    time(&data_hora_segundos); // preenche a variável data_hora_segundos
+    tm *tempo_inicial_info=localtime(&data_hora_segundos);
+
+    int time_diff;
+
+    tempo_inicial=mktime(tempo_inicial_info);
+
+    tm* tempo_final_info=localtime(&tempo_final);
+
+    tempo_final_info->tm_year=birthday.year-1900; //ano (� necess�rio subtrair 1900, pois os anos iniciam em 1900)
+    tempo_final_info->tm_mon=birthday.month-1;  //m�s (� necess�rio subtrair 1, pois os meses iniciam no zero)
+    tempo_final_info->tm_mday=birthday.day; //dia
+    tempo_final_info->tm_hour=0; //hora=00
+    tempo_final_info->tm_min=0; //minuto=00
+    tempo_final_info->tm_sec=0; //segundo=00
+
+    tempo_final=mktime(tempo_final_info);
+
+    //cout << "Tempo: " << tempo_inicial << " " <<  tempo_final << endl;
+    time_diff = tempo_inicial - tempo_final;
+
+    cout << "\t\tDiferenca em segundos: " << time_diff << endl;
+
+    return time_diff;
 }
