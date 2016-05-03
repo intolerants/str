@@ -42,7 +42,7 @@ int main( )
     
     date birthday;
     details feedback;
-    int porta = 9736;
+    int porta = 9737;
 
     unlink("server_socket");  // remocao de socket antigo
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);  // cria um novo socket
@@ -50,7 +50,7 @@ int main( )
     server_address.sin_family = AF_INET;
     //server_address.sin_addr.s_addr = inet_addr("127.0.0.1"); // s� clientes locais
     server_address.sin_addr.s_addr  = INADDR_ANY;  // qualquer cliente
-    server_address.sin_port = porta;
+    server_address.sin_port = htons(porta);
     
     //strcpy(server_address.sun_path, "server_socket");
     

@@ -86,7 +86,7 @@ int main( )
 
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = *((unsigned long int *)nome_da_maquina->h_addr);
-    address.sin_port = porta;
+    address.sin_port = htons(porta);
     
     len = sizeof(address);
     
