@@ -98,9 +98,9 @@ int main( )
         exit(1);
     }
     
-    write(sockfd,  &birthday, sizeof(birthday));
+    send(sockfd,  &birthday, sizeof(birthday),0);
     
-    read(sockfd, &feedback,sizeof(feedback));
+    recv(sockfd, &feedback,sizeof(feedback),0);
 
     cout << "\t\tTempo: " << feedback.time << "s" << endl;
     cout << "\t\tDescricao: " << feedback.description <<endl;

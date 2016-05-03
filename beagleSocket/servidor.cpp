@@ -42,7 +42,7 @@ int main( )
     
     date birthday;
     details feedback;
-    int porta = 9737;
+    int porta = 9738;
 
     unlink("server_socket");  // remocao de socket antigo
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);  // cria um novo socket
@@ -63,7 +63,7 @@ int main( )
         printf("Servidor esperando na porta %d ...\n", porta);
         client_sockfd = accept(server_sockfd, (struct sockaddr *) &client_address, (socklen_t *) &client_len);
         
-        read(client_sockfd, &birthday,sizeof(birthday));
+        recv(client_sockfd, &birthday,sizeof(birthday),0);
         cout <<"\t\tRecebido " << birthday.day << "/" << birthday.month << "/" << birthday.year << endl;
 
         feedback.time = calcTime(birthday);      
@@ -73,7 +73,7 @@ int main( )
         } else {
             strcpy(feedback.description, "Ta velh@ emmmmmm!");
         }
-        write(client_sockfd, &feedback, sizeof(feedback));
+        send(client_sockfd, &feedback, sizeof(feedback),0);
 
         close(client_sockfd);
     }
